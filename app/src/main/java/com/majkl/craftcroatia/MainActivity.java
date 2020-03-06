@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements BeerAdapter.IOnIt
 
         data.add(new BeerData("Neposlusna", "Zadar", R.drawable.neposlusna));
         data.add(new BeerData("BuraBrew", "Zadar", R.drawable.bura_brew));
+        data.add(new BeerData("Lepi decki", "Zagreb", R.drawable.lepi_decki_waitapu));
+        data.add(new BeerData("Nova runda", "Zagreb", R.drawable.nova_runda));
+        data.add(new BeerData("Zmajsko", "Zagreb", R.drawable.zmajsko));
 
 
         return  data;
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements BeerAdapter.IOnIt
 
     @Override
     public void onItemClicked(BeerData item, int position) {
-        Toast.makeText(this, "Beer clicked" + item.getTitle(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, item.getTitle(), Toast.LENGTH_SHORT).show();
 
     }
 }
