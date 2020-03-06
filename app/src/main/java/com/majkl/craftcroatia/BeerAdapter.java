@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.ViewHolder> {
@@ -26,7 +25,7 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BeerAdapter.ViewHolder holder, int position, @NonNull List<Object> payloads) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull List<Object> payloads) {
         holder.bindData(data.get(position));
 
     }
@@ -49,7 +48,7 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.ViewHolder> {
         private ImageView drawable;
 
         public ViewHolder(@NonNull View itemView) {
-            super(ItemView);
+            super(itemView);
             itemView.setOnClickListener(this);
             title = itemView.findViewById(R.id.title);
             address = itemView.findViewById(R.id.address);
