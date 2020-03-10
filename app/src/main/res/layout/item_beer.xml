@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:orientation="horizontal"
@@ -26,15 +27,20 @@
 
         <TextView
             android:id="@+id/title"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            android:textColor="#651FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_name"/>
 
         <TextView
             android:id="@+id/address"
+            android:textStyle="bold|italic"
+            android:textColor="#09090C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Brewery address"/>
+            android:text="@string/app_name"/>
 
     </LinearLayout>
 
